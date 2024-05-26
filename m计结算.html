@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>麦当劳结算系统</title>
+    <style>
+        .z{
+            color: red;
+            font-size: 40px; 
+            text-align: center;
+        }
+        
+        .t{
+          color: green;
+          font-size:25px;
+          text-align: center; 
+          text-indent: 200px; 
+        }
+
+    </style>
+</head>
+<div style="background-image: url('1.jpg')">
+<body>
+    <button class="back">返回主界面</button>
+    <div style="text-align:center"><img src="./麦当劳1.jpg" width="500" height="200"></div>
+    <div class="z">麦当劳</div>
+    <hr>
+<script>
+alert('欢迎光临!')
+</script>
+
+
+    <table align="center" border="1" height="100" width="500" >
+<tr >
+<th style=" background-color:green">食物图片</th>
+ <th style=" background-color:green">食物名称</th>
+ <th style=" background-color:green">价格</th>   
+ <th style=" background-color:green">购买数量</th>
+ <th rowspan="5" style=" background-color:pink"><button  class="btn9" style="background-color:#fc5131" >结算</button></th>
+</tr>
+
+<tr style=" background-color:green" >
+    <th><img src="./可乐.jpg" width="70" height="70"></th>
+    <th>可乐</th>
+    <th>3元</th>
+    <div><th><button class="btn1">+</button><button class="btn2">-</button><input type="text" style="width:100px" class="text1" value="0">份</div></th>
+</tr>
+
+
+<tr style=" background-color:blue">
+    <th><img src="./炸鸡.jpg" width="70" height="70"></th>
+    <th>炸鸡</th>
+    <th>23元</th>
+    <div><th><button class="btn3">+</button><button class="btn4">-</button><input type="text" style="width:100px"  class="text2" value="0">份</div></th>
+</tr>
+
+
+
+<tr style=" background-color:red">
+    <th> <img src="./薯条.jpg" width="70" height="70"> </th>
+    <th>薯条</th>
+    <th>7元</th>
+    <div><th><button class="btn5">+</button><button class="btn6">-</button><input type="text"  style="width:100px" class="text3" value="0">份</div></tr>
+</tr>
+
+
+
+<tr style=" background-color:yellow">
+    <th> <img src="./汉堡.jpg" width="70" height="70"> </th>
+    <th>汉堡</th>
+    <th>13元</th>
+    <div><th><button class="btn7">+</button><button class="btn8">-</button><input type="text" style="width:100px"  class="text4" value="0">份</div></tr>
+</tr>
+
+
+
+    </table>
+    <div class="buttom" style="text-align: center;font-size: 20px;">  ---<!-- -->2024 <!-- -->Create By Zwf---</div>
+<!-- 表格 -->
+<script>
+    let a=0
+    let b=0
+    let c=0
+    let d=0
+    let num = [0,1,2,3,4,5]
+    let price =[3]
+    let sum = 0
+    const text1 = document.querySelector('.text1')
+    const text2 = document.querySelector('.text2')
+    const text3 = document.querySelector('.text3')
+    const text4 = document.querySelector('.text4')
+    const btn1 = document.querySelector('.btn1')
+    const btn2 = document.querySelector('.btn2')
+    const btn3 = document.querySelector('.btn3')
+    const btn4 = document.querySelector('.btn4')
+    const btn5 = document.querySelector('.btn5')
+    const btn6 = document.querySelector('.btn6')
+    const btn7 = document.querySelector('.btn7')
+    const btn8 = document.querySelector('.btn8')
+    const btn9 = document.querySelector('.btn9')
+    btn1.addEventListener('click',function(){
+if( a>=5){
+alert('最大购买量为5份')
+}
+else{
+        a++
+        text1.value = num[a]
+        sum = sum + 3 
+       } 
+    })
+    btn2.addEventListener('click',function(){
+if( a<=0){
+alert('数目错误！')
+}
+else{a--
+        text1.value = num[a]
+        sum = sum - 3 
+}
+
+
+    })
+    btn3.addEventListener('click',function(){
+if( b>=5){
+alert('最大购买量为5份！')
+}
+else{
+        b++
+        text2.value = num[b]
+        sum = sum + 23 
+        }
+    })
+    btn4.addEventListener('click',function(){
+if( b<=0){
+alert('数量错误！')
+}
+else{
+        b--
+        text2.value = num[b]
+        sum = sum - 23 
+}
+    })
+    btn5.addEventListener('click',function(){
+if( c>=5){
+alert('最大购买量为5份！')
+}
+else{
+        c++
+        text3.value = num[c]
+        sum = sum + 7 
+       } 
+    })
+    btn6.addEventListener('click',function(){
+if( c<=0){
+alert('数目错误！')
+}
+else{
+        c--
+        text3.value = num[c]
+        sum = sum - 7 
+}
+    })
+    btn7.addEventListener('click',function(){
+if( d>=5){
+alert('最大购买量为5份！')
+}
+else{
+        d++
+        text4.value = num[d]
+        sum = sum + 13 
+}
+        
+    })
+    btn8.addEventListener('click',function(){
+if( d<=0){
+alert('数目错误！')
+}
+else{
+        d--
+        text4.value = num[d]
+        sum = sum - 13 
+}
+    })
+
+
+
+
+
+
+
+    btn9.addEventListener('click',function (){
+        alert(`你需要付款${sum} ￥`)
+    })
+        
+const back=document.querySelector('.back')
+back.addEventListener('click',function(){
+window.location.href='../我的网址.html';
+})
+</script>
+
+<!-- 购买 -->
+
+    <hr>
+<br>
+
+</body>
+</html>
