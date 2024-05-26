@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你爹的网址</title>
+</head>
+<style>
+    *{
+        list-style: none;
+        
+    }
+ 
+    .index{
+       background-color: rgb(186, 184, 184);
+        display: flex;
+        
+    }
+    .mainbody{
+        display: flex;
+        
+        background-image: url("背景图.jpg");
+        background-size: 1352px 700px;
+       
+    }
+    .bottom{
+       
+        height: 70px;
+        text-align: center;
+        font-size: 20px;
+        background-color: rgb(189, 188, 189)
+    }
+    .mainleft{
+        width: 200px;
+        height: 700px;
+       
+    }
+    .maincenter{
+       
+        width:1200px;
+        height: 700px;
+    }
+    .mainright{
+        width: 200px;
+        height: 700px;
+       
+    }
+    .div1{
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .div2{
+        margin-right: 50px;
+        margin-left:auto;
+    }
+    .div3{
+        margin-left: 100px;
+        margin-right:auto;
+    }
+    .jiemaqi{
+        height: 55px;
+        
+    }
+    .mji{
+        height: 55px;
+      
+    }
+</style>
+<body>
+  
+
+
+<!-- 导航 -->
+    <div class="index">
+<div class="div3">
+    <span>常用功能：</span>
+   <button class="jiemaqi" style="background-color: rgb(162, 159, 159)">解码器</button>
+   <button class="mji" style="background-color: rgb(162, 159, 159)">麦当劳结算系统</button>
+</div>
+
+<div class="div1">
+ <ul style="display: flex">
+<li><input type="text" placeholder="请输入内容"></li>
+<li><button style="background-color: rgb(162, 159, 159)">搜索</button></li>
+</ul>
+</div>
+
+<div class="div2">
+<ul style="display: flex">
+ <li><button style="background-color: rgb(162, 159, 159)">登陆</button></li>
+ <li><button style="background-color: rgb(162, 159, 159)">注册</button></li>
+</div>
+</ul>
+</div>
+
+
+
+<!-- 主体 -->
+    <div class="mainbody">主体
+        <div class="mainleft">主体左</div>
+        <div class="maincenter">主体中</div>
+        <div class="mainright">主体右</div>
+    </div>
+
+
+
+
+
+
+<!-- 底部 -->
+<div class="bottom">  ---<!-- -->2024 <!-- -->Create By Zwf---</div>
+
+
+
+<!-- 功能实现 -->
+<script>
+const jiemaqi=document.querySelector('.jiemaqi')
+jiemaqi.addEventListener('click',function(){
+    window.location.href='解码器/解码器.html';
+})
+const mji=document.querySelector('.mji')
+mji.addEventListener('click',function(){
+    window.location.href='m计网址/m计结算.html';
+})
+
+</script>
+</body>
+</html>
