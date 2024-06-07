@@ -36,7 +36,7 @@
             
            margin-right: 100px;
         }
-        .jiemaqi{
+        .btn2{
             background-color: green;
         }
         .test2{
@@ -66,7 +66,7 @@
     <input type="test" class="test1"   placeholder="请输入你要解码的数字"  maxlength="12"/>
     <input type="radio" name="fangfa" class="ff1">动态规划解码
     <input type="radio" class="ff2" name="fangfa">回溯法解码
-    <button class="jiemaqi">开始解码</button>
+    <button class="btn2">开始解码</button>
     <br>
     <span>一共有</span><span class="test2">0</span><span>种解码方法</span>
     
@@ -122,7 +122,7 @@ var numDecodings = function(s) {
 
 const ff1=document.querySelector('.ff1')
 const ff2=document.querySelector('.ff2')
-const jiemaqi=document.querySelector('.jiemaqi')
+const btn2=document.querySelector('.btn2')
 const t1=document.querySelector('.test1')
 const t2=document.querySelector('.test2')
 
@@ -139,7 +139,7 @@ ff2.addEventListener("mousedown",function(){
 
 
 
-jiemaqi.addEventListener("click",function(){
+btn2.addEventListener("click",function(){
     if(q==1)
     {
         alert("你在使用动态规划方式")
