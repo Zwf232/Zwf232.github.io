@@ -88,7 +88,7 @@
 //算法一 动态规划
 var numDecodings = function(s) {
     const n = s.length;
-    
+    if（n==0）｛（return 0；）｝
     const f = new Array(n + 1).fill(0);
     f[0] = 1;
     for (let i = 1; i <= n; ++i) {
@@ -108,7 +108,7 @@ var numDecodings = function(s) {
 //
 //算法二 回溯法
  var numDecodings2 = function(s) {
-    if (!s) return 1;
+    if (!s) return 0;
     let cnt = 0
     if (s[0] !== '0') cnt += numDecodings(s.slice(1));
     if (s.length >= 2 && s[0] === '1' || (s[0] === '2' && s[1] >= 0 && s[1] <= 6)) {
