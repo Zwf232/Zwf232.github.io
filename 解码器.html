@@ -88,9 +88,7 @@
 //算法一 动态规划
 var numDecodings = function(s) {
     const n = s.length;
-    if (n==0){
-        return 0;
-    }
+    
     const f = new Array(n + 1).fill(0);
     f[0] = 1;
     for (let i = 1; i <= n; ++i) {
